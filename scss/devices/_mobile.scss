@@ -1,0 +1,46 @@
+@media (min-width: 300px) {
+  footer{
+    background-color: $defaultColor;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+    padding: 1%;
+    color: whitesmoke;
+    article{
+      width: 99%;
+      height: 19vh;
+    }
+    p{
+      padding: 5%;
+    }
+
+    input{
+      padding:1.5%;
+      border: none;
+      outline:none;  
+    }
+
+    [type="submit"]{
+      background-color:$buttons;
+      color: $block;
+      font-weight: bold;
+    }
+
+    h1{
+      font-weight:900;
+    }
+
+    a{
+      text-decoration: none;
+      color: whitesmoke;
+    }
+
+    article:nth-child(1) > .container-links-footer{
+      display:flex;
+      justify-content: center;
+      column-gap: 15px;
+    }
+    
+  }
+}

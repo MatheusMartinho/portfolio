@@ -1,0 +1,8 @@
+@mixin Education-cardImg($url){
+  background: url($url);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vh;
+  height: 40vh;
+}
