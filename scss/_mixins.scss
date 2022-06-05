@@ -7,6 +7,22 @@
   height: 40vh;
 }
 
+@mixin progess-bar($width) {
+  > span{
+    width: $width;
+    padding: 1%;
+    background-color:$block;
+    color:whitesmoke;
+    display:flex;
+    column-gap: 10px;
+    i{
+      text-align: center;
+      width: 10%;
+    }
+  }
+  
+}
+
 @mixin subheader(){
   .subheader {
     width: 100%;

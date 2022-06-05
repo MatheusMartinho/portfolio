@@ -26,6 +26,113 @@ main {
 }
 
 @media (min-width: 300px) {
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  .skills .subheader {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills .subheader h1, .skills .subheader span {
+    color: #11706a;
+  }
+  .skills .subheader h1 {
+    border-bottom: 1px solid #11706a;
+  }
+  .skills .progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+  }
+  .skills .progress-bar > p:nth-child(1), .skills .progress-bar > p:nth-child(2), .skills .progress-bar > p:nth-child(3), .skills .progress-bar > p:nth-child(4) {
+    width: 100%;
+    background-color: gainsboro;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skills .progress-bar > p:nth-child(1) > span {
+    width: 80%;
+    padding: 1%;
+    background-color: #11706a;
+    color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .skills .progress-bar > p:nth-child(1) > span i {
+    text-align: center;
+    width: 10%;
+  }
+  .skills .progress-bar > p:nth-child(2) > span {
+    width: 90%;
+    padding: 1%;
+    background-color: #11706a;
+    color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .skills .progress-bar > p:nth-child(2) > span i {
+    text-align: center;
+    width: 10%;
+  }
+  .skills .progress-bar > p:nth-child(3) > span {
+    width: 70%;
+    padding: 1%;
+    background-color: #11706a;
+    color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .skills .progress-bar > p:nth-child(3) > span i {
+    text-align: center;
+    width: 10%;
+  }
+  .skills .progress-bar > p:nth-child(4) > span {
+    width: 60%;
+    padding: 1%;
+    background-color: #11706a;
+    color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .skills .progress-bar > p:nth-child(4) > span i {
+    text-align: center;
+    width: 10%;
+  }
   .education {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -107,6 +214,7 @@ main {
     -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+    padding: 3%;
   }
   .contact {
     display: -webkit-box;

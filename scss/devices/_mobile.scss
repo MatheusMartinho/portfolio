@@ -1,4 +1,42 @@
 @media (min-width: 300px) {
+  .skills{
+    @include subheader();
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    .progress-bar{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px; 
+      width:100%;
+
+      %p-progress {
+        width: 100%;
+        background-color: gainsboro;
+        display: flex;
+      }
+      
+      > p:nth-child(1) {
+        @extend %p-progress;
+        @include progess-bar(80%);
+      }
+      > p:nth-child(2) {
+        @extend %p-progress;
+        @include progess-bar(90%);
+      }
+    
+      > p:nth-child(3) {
+        @extend %p-progress;
+        @include progess-bar(70%);
+      }
+      > p:nth-child(4) {
+        @extend %p-progress;
+        @include progess-bar(60%);
+      }
+    }
+  }
+  
   .education{
     @include subheader();
     display: flex;
@@ -38,6 +76,7 @@
       border: 1px solid gainsboro;
       box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
       border-radius: 15px;
+      padding: 3%;
     }
   }
 
