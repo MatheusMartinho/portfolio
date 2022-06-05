@@ -1,4 +1,46 @@
 @media (min-width: 300px) {
+  .education{
+    @include subheader();
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    div{
+      display:flex;
+      flex-direction: column;
+      row-gap: 30px;
+      
+      .card-body{
+        padding:5%;
+      }
+
+      .card-ser{
+        @include Education-cardImg("/img/ser-logo.png")
+      }
+      .card-mack{
+        @include Education-cardImg("/img/mackenzie-logo.png")
+      }
+      .card-tam{
+        @include Education-cardImg("/img/tamwood-logo.png")
+      }
+
+      a{
+        border: none;
+        width: 40%;
+        text-align: center;
+        padding:2%;
+        background-color:$buttons;
+        text-decoration: none;
+        color: $block;
+        border-radius: 15px;
+      }
+    }
+    .card{
+      border: 1px solid gainsboro;
+      box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+      border-radius: 15px;
+    }
+  }
+
   .contact{
     display:flex;
     flex-direction: column;
