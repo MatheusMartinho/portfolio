@@ -1,4 +1,55 @@
 @media (min-width: 300px) {
+  .contact{
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    @include subheader();
+
+    form {
+      display:flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 1%;
+      align-items: center;
+    }
+
+    input{
+      border: 1px solid gainsboro;
+      padding: 4%;
+      outline:none;
+      width: 90%;
+    }
+
+    [type="submit"]{
+      background-color:$buttons;
+      color: $block;
+      font-weight: bold;
+      width: 99%;
+    }
+
+    textarea{
+      border: 1px solid gainsboro;
+      width: 90%;
+      padding: 4%;
+      height: 10vh;
+    }
+
+    .text-below-contact{
+      display:flex;
+      flex-direction: column;
+      row-gap: 30px;
+      div{
+        display:flex;
+        flex-direction: column;
+      }
+      a{
+        text-decoration: none;
+        color: cornflowerblue;
+      }
+    }
+  }
+
   footer{
     background-color: $defaultColor;
     display: flex;
