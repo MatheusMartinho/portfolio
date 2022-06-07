@@ -1,4 +1,60 @@
 @media (min-width: 300px) {
+  
+  .projects{
+    @include subheader();
+    display:flex;
+    flex-direction:column;
+    row-gap: 30px;
+    .container-projects{
+      display:flex;
+      flex-direction: column;
+      row-gap: 30px;
+      .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        background-color: $block;
+        box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+        height: 60vh;
+        p{
+          padding:5%;
+          
+          text-align: center;
+        }
+        a{
+          width: 100%;
+          padding-bottom: 7%;
+          padding-left: 24%;
+          text-decoration: none;
+          color: $buttons;
+        }
+      }
+      h3{
+        text-align: center;
+        padding: 5%;
+      }
+    }
+    .projeto1{
+      @include project-cardImg("/img/projeto1.png");
+    }
+    .projeto2{
+      @include project-cardImg("/img/projeto2.png");
+    }
+    .projeto3{
+      @include project-cardImg("/img/projeto3.png");
+    }
+    .projeto4{
+      @include project-cardImg("/img/projeto4.png");
+    }
+    .projeto5{
+      @include project-cardImg("/img/projeto5.png");
+    }
+    .projeto6{
+      @include project-cardImg("/img/projeto6.png");
+    }
+  }
+  
   .skills{
     @include subheader();
     display:flex;
