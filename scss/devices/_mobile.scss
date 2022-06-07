@@ -1,5 +1,27 @@
 @media (min-width: 300px) {
-  
+  .about{
+    @include subheader();
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .container{
+        display:flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+      aside{
+        background: url("/img/mat-photo.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40vh;
+        height: 50vh;
+        border-radius: 15px;
+        border: 5px solid $block; 
+      }
+    }
+  }  
+      
   .projects{
     @include subheader();
     display:flex;
