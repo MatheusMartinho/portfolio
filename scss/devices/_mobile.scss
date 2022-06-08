@@ -70,8 +70,12 @@
       h1,h2{
         padding: 1% 4%;
       }
-      .link-header{
-        margin-top: 4%;
+      .pad{
+        padding-bottom:5%;
+      }
+      .wrap {
+        min-height: 20vh;
+        
       }
       a{
         text-decoration:none;
@@ -395,7 +399,9 @@
     h1{
       font-weight:900;
     }
-
+    ul{
+      list-style: none;
+    }
     a{
       text-decoration: none;
       color: whitesmoke;

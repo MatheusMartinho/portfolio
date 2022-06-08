@@ -119,8 +119,11 @@ main {
   header .header-body h1, header .header-body h2 {
     padding: 1% 4%;
   }
-  header .header-body .link-header {
-    margin-top: 4%;
+  header .header-body .pad {
+    padding-bottom: 5%;
+  }
+  header .header-body .wrap {
+    min-height: 20vh;
   }
   header .header-body a {
     text-decoration: none;
@@ -680,6 +683,9 @@ main {
   }
   footer h1 {
     font-weight: 900;
+  }
+  footer ul {
+    list-style: none;
   }
   footer a {
     text-decoration: none;
