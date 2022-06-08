@@ -772,5 +772,8 @@ main {
             flex-direction: row;
     width: 63.4vh;
   }
+  footer ul {
+    list-style: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
