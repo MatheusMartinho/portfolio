@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand:wght@300&display=swap");
+@import url("https://use.typekit.net/grv0vbg.css");
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,8 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 550;
+  background-color: #161623;
+  color: white;
 }
 
 main {
@@ -50,12 +53,61 @@ main {
             align-items: center;
   }
   .about .subheader h1, .about .subheader span {
-    color: #11706a;
+    color: #fd2155;
   }
   .about .subheader h1 {
-    border-bottom: 1px solid #11706a;
+    border-bottom: 1px solid #fd2155;
   }
-  .about .container {
+  .about #container {
+    font-family: futura-pt, sans-serif;
+    width: 100%;
+    padding: 20px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .about #container .my-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    padding: 10px 8px;
+    color: #126f97;
+    font-size: 11px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  .about #container .my-name .attribute {
+    border-radius: 50%;
+    -webkit-box-shadow: -2px -2px 5px white, -2px -2px 5px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+            box-shadow: -2px -2px 5px white, -2px -2px 5px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(255, 255, 255, 0.1), 2px 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .about #container .level {
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .about #container .level img {
+    border-radius: 15px;
+    -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  .about #container .my-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,20 +115,29 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-radius: 5px;
   }
-  .about .container aside {
-    background: url("/img/mat-photo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 40vh;
-    height: 50vh;
-    border-radius: 15px;
-    border: 5px solid #11706a;
+  .about #container .my-image img {
+    width: 35vh;
+    border-radius: 5px;
+    -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  .about #container .card {
+    border: 1px solid transparent;
+    min-height: 70vh;
+    -webkit-box-shadow: -5px -5px 5px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -5px -5px 5px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  .about #container .description {
+    margin: 5%;
+    padding: 3%;
+    -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
   }
   .projects {
     display: -webkit-box;
@@ -102,10 +163,10 @@ main {
             align-items: center;
   }
   .projects .subheader h1, .projects .subheader span {
-    color: #11706a;
+    color: #fd2155;
   }
   .projects .subheader h1 {
-    border-bottom: 1px solid #11706a;
+    border-bottom: 1px solid #fd2155;
   }
   .projects .container-projects {
     display: -webkit-box;
@@ -129,7 +190,7 @@ main {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 15px;
-    background-color: #11706a;
+    background-color: #fd2155;
     -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     height: 60vh;
@@ -143,7 +204,7 @@ main {
     padding-bottom: 7%;
     padding-left: 24%;
     text-decoration: none;
-    color: #f5d729;
+    color: #5be6c8;
   }
   .projects .container-projects h3 {
     text-align: center;
@@ -227,10 +288,10 @@ main {
             align-items: center;
   }
   .skills .subheader h1, .skills .subheader span {
-    color: #11706a;
+    color: #fd2155;
   }
   .skills .subheader h1 {
-    border-bottom: 1px solid #11706a;
+    border-bottom: 1px solid #fd2155;
   }
   .skills .progress-bar {
     display: -webkit-box;
@@ -253,7 +314,7 @@ main {
   .skills .progress-bar > p:nth-child(1) > span {
     width: 80%;
     padding: 1%;
-    background-color: #11706a;
+    background-color: #fd2155;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -268,7 +329,7 @@ main {
   .skills .progress-bar > p:nth-child(2) > span {
     width: 90%;
     padding: 1%;
-    background-color: #11706a;
+    background-color: #fd2155;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,7 +344,7 @@ main {
   .skills .progress-bar > p:nth-child(3) > span {
     width: 70%;
     padding: 1%;
-    background-color: #11706a;
+    background-color: #fd2155;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,7 +359,7 @@ main {
   .skills .progress-bar > p:nth-child(4) > span {
     width: 60%;
     padding: 1%;
-    background-color: #11706a;
+    background-color: #fd2155;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,10 +395,10 @@ main {
             align-items: center;
   }
   .education .subheader h1, .education .subheader span {
-    color: #11706a;
+    color: #fd2155;
   }
   .education .subheader h1 {
-    border-bottom: 1px solid #11706a;
+    border-bottom: 1px solid #fd2155;
   }
   .education div {
     display: -webkit-box;
@@ -353,7 +414,7 @@ main {
     padding: 5%;
   }
   .education div .card-ser {
-    background: url("/img/ser-logo.png");
+    background: url("/img/logo-colegio-ser-mobile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -381,15 +442,15 @@ main {
     width: 40%;
     text-align: center;
     padding: 2%;
-    background-color: #f5d729;
+    background-color: #5be6c8;
     text-decoration: none;
-    color: #11706a;
+    color: #022c44;
     border-radius: 15px;
   }
   .education .card {
     border: 1px solid gainsboro;
-    -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     padding: 3%;
   }
@@ -417,10 +478,10 @@ main {
             align-items: center;
   }
   .contact .subheader h1, .contact .subheader span {
-    color: #11706a;
+    color: #fd2155;
   }
   .contact .subheader h1 {
-    border-bottom: 1px solid #11706a;
+    border-bottom: 1px solid #fd2155;
   }
   .contact form {
     display: -webkit-box;
@@ -443,8 +504,8 @@ main {
     width: 90%;
   }
   .contact [type="submit"] {
-    background-color: #f5d729;
-    color: #11706a;
+    background-color: #5be6c8;
+    color: #022c44;
     font-weight: bold;
     width: 99%;
   }
@@ -504,8 +565,8 @@ main {
     outline: none;
   }
   footer [type="submit"] {
-    background-color: #f5d729;
-    color: #11706a;
+    background-color: #5be6c8;
+    color: #022c44;
     font-weight: bold;
   }
   footer h1 {
