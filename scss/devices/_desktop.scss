@@ -1,0 +1,67 @@
+@media (min-width: 1080px){
+  main{
+    section{
+      width: 100%
+    }
+  }
+  .education{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+    .card{
+      width: 40vh;
+      height: 60vh;
+    }
+    .card-body a{
+      padding: 3%;
+      background-color: $block;
+    }
+    .card:hover{
+      background-color: $buttons;
+      color:black;
+      a:hover{
+        color:$buttons;
+        background-color: $block;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+      -o-transition-delay: 1s;
+      }
+    }
+  }
+  .contact{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    article{
+      width: 40%;
+    }
+    [type="submit"]{
+      border: none;
+    }
+    [type="submit"]:hover{
+      background-color: $buttons;
+      box-shadow: 0 0 10px $buttons, 0 0 40px $buttons, 0 0 80px $buttons;
+      -o-transition-delay: 1s;
+    }
+  }
+  footer{
+    width: 97.89%;
+    min-height: 30vh;
+    [type="submit"]{
+      border:none;
+    }
+    [type="submit"]:hover{
+      background-color: $buttons;
+      box-shadow: 0 0 10px $buttons, 0 0 40px $buttons, 0 0 80px $buttons;
+      -o-transition-delay: 1s;
+    }
+    [type="email"]{
+      width: 35vh;
+  }
+  a:hover{
+    color: $buttons;
+  }
+  }
+}
