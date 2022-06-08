@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Quicksand:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://use.typekit.net/grv0vbg.css");
 * {
   padding: 0;
@@ -10,9 +11,9 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 550;
-  background-color: #161623;
+  background-color: #110e28;
   color: white;
 }
 
@@ -29,6 +30,106 @@ main {
 }
 
 @media (min-width: 300px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 10vh;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+  }
+  header nav .nav-desktop {
+    display: none;
+  }
+  header nav .left, header nav .right {
+    font-size: 35px;
+    padding: 4%;
+  }
+  header nav details {
+    position: relative;
+    text-align: right;
+  }
+  header nav details a {
+    text-decoration: none;
+    color: #5be6c8;
+    padding: 5%;
+  }
+  header nav details > ul {
+    border-radius: 15px;
+    background-color: #8c2fee;
+    width: 110%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav details > ul > li {
+    -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  header .header-img {
+    background-image: url("/img/app-monitoring.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45vh;
+    height: 45vh;
+  }
+  header .header-body {
+    min-height: 10vh;
+    width: 45vh;
+  }
+  header .header-body h1 {
+    background-color: red;
+    background-image: linear-gradient(45deg, #8c2fee, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  header .header-body h1, header .header-body h2 {
+    padding: 1% 4%;
+  }
+  header .header-body .link-header {
+    margin-top: 4%;
+  }
+  header .header-body a {
+    text-decoration: none;
+    background-color: #8c2fee;
+    color: #5be6c8;
+    padding: 2% 4%;
+    margin-left: 3%;
+    border-radius: 15px;
+  }
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,10 +154,10 @@ main {
             align-items: center;
   }
   .about .subheader h1, .about .subheader span {
-    color: #fd2155;
+    color: #8c2fee;
   }
   .about .subheader h1 {
-    border-bottom: 1px solid #fd2155;
+    border-bottom: 1px solid #8c2fee;
   }
   .about #container {
     font-family: futura-pt, sans-serif;
@@ -136,8 +237,16 @@ main {
   .about #container .description {
     margin: 5%;
     padding: 3%;
+    border-radius: 5px;
     -webkit-box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: -4px -4px 4px white, -4px -4px 4px rgba(255, 255, 255, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.1), 2px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  .about #container .atk-def {
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: solid 1px #d8d8d8;
+    font-size: 12px;
+    text-align: right;
   }
   .projects {
     display: -webkit-box;
@@ -163,10 +272,10 @@ main {
             align-items: center;
   }
   .projects .subheader h1, .projects .subheader span {
-    color: #fd2155;
+    color: #8c2fee;
   }
   .projects .subheader h1 {
-    border-bottom: 1px solid #fd2155;
+    border-bottom: 1px solid #8c2fee;
   }
   .projects .container-projects {
     display: -webkit-box;
@@ -190,7 +299,7 @@ main {
         -ms-flex-align: center;
             align-items: center;
     border-radius: 15px;
-    background-color: #fd2155;
+    background-color: #8c2fee;
     -webkit-box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     height: 60vh;
@@ -288,10 +397,10 @@ main {
             align-items: center;
   }
   .skills .subheader h1, .skills .subheader span {
-    color: #fd2155;
+    color: #8c2fee;
   }
   .skills .subheader h1 {
-    border-bottom: 1px solid #fd2155;
+    border-bottom: 1px solid #8c2fee;
   }
   .skills .progress-bar {
     display: -webkit-box;
@@ -314,7 +423,7 @@ main {
   .skills .progress-bar > p:nth-child(1) > span {
     width: 80%;
     padding: 1%;
-    background-color: #fd2155;
+    background-color: #8c2fee;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,7 +438,7 @@ main {
   .skills .progress-bar > p:nth-child(2) > span {
     width: 90%;
     padding: 1%;
-    background-color: #fd2155;
+    background-color: #8c2fee;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -344,7 +453,7 @@ main {
   .skills .progress-bar > p:nth-child(3) > span {
     width: 70%;
     padding: 1%;
-    background-color: #fd2155;
+    background-color: #8c2fee;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -359,7 +468,7 @@ main {
   .skills .progress-bar > p:nth-child(4) > span {
     width: 60%;
     padding: 1%;
-    background-color: #fd2155;
+    background-color: #8c2fee;
     color: whitesmoke;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,10 +504,10 @@ main {
             align-items: center;
   }
   .education .subheader h1, .education .subheader span {
-    color: #fd2155;
+    color: #8c2fee;
   }
   .education .subheader h1 {
-    border-bottom: 1px solid #fd2155;
+    border-bottom: 1px solid #8c2fee;
   }
   .education div {
     display: -webkit-box;
@@ -478,10 +587,10 @@ main {
             align-items: center;
   }
   .contact .subheader h1, .contact .subheader span {
-    color: #fd2155;
+    color: #8c2fee;
   }
   .contact .subheader h1 {
-    border-bottom: 1px solid #fd2155;
+    border-bottom: 1px solid #8c2fee;
   }
   .contact form {
     display: -webkit-box;
@@ -539,7 +648,7 @@ main {
     color: cornflowerblue;
   }
   footer {
-    background-color: #022c44;
+    background-color: #8c2fee;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
