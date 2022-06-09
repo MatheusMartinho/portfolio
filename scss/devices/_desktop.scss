@@ -4,6 +4,33 @@
       width: 100%
     }
   }
+  .projects{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    .container-projects{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .container{
+        width: 30%;
+      }
+      a{
+        
+        width: 25% !important;
+        padding: 2% !important;
+        margin-bottom: 2%;
+        border-radius: 15px;
+      }
+      a:hover{
+        color:$block;
+        border: 1px solid $buttons;
+        background-color: $buttons;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+        transition: all ease 0.5s;
+      }
+    }
+  }
   .skills{
     flex-direction: row;
     flex-wrap: wrap;

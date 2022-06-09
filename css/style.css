@@ -781,6 +781,44 @@ main {
   main section {
     width: 100%;
   }
+  .projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .projects .container-projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projects .container-projects .container {
+    width: 30%;
+  }
+  .projects .container-projects a {
+    width: 25% !important;
+    padding: 2% !important;
+    margin-bottom: 2%;
+    border-radius: 15px;
+  }
+  .projects .container-projects a:hover {
+    color: #8c2fee;
+    border: 1px solid #5be6c8;
+    background-color: #5be6c8;
+    -webkit-box-shadow: 0 0 10px #8c2fee, 0 0 40px #8c2fee, 0 0 80px #8c2fee;
+            box-shadow: 0 0 10px #8c2fee, 0 0 40px #8c2fee, 0 0 80px #8c2fee;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
   .skills {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
