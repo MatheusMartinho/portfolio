@@ -95,7 +95,7 @@ main {
             justify-content: right;
   }
   header .header-img {
-    background-image: url("./img/app-monitoring.webp");
+    background-image: url("../img/app-monitoring.webp");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -323,7 +323,7 @@ main {
     padding: 5%;
   }
   .projects .projeto1 {
-    background: url("./img/projeto1.png");
+    background: url("../img/projeto1.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -332,7 +332,7 @@ main {
     border-radius: 15px;
   }
   .projects .projeto2 {
-    background: url("./img/projeto2.png");
+    background: url("../img/projeto2.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -341,7 +341,7 @@ main {
     border-radius: 15px;
   }
   .projects .projeto3 {
-    background: url("./img/projeto3.png");
+    background: url("../img/projeto3.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -350,7 +350,7 @@ main {
     border-radius: 15px;
   }
   .projects .projeto4 {
-    background: url("./img/projeto4.png");
+    background: url("../img/projeto4.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -359,7 +359,7 @@ main {
     border-radius: 15px;
   }
   .projects .projeto5 {
-    background: url("./img/projeto5.png");
+    background: url("../img/projeto5.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -368,7 +368,7 @@ main {
     border-radius: 15px;
   }
   .projects .projeto6 {
-    background: url("./img/projeto6.png");
+    background: url("../img/projeto6.png");
     background-position: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -526,7 +526,7 @@ main {
     padding: 5%;
   }
   .education div .card-ser {
-    background: url("./img/logo-colegio-ser-mobile.png");
+    background: url("../img/logo-colegio-ser-mobile.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -534,7 +534,7 @@ main {
     height: 40vh;
   }
   .education div .card-mack {
-    background: url("./img/mackenzie-logo.png");
+    background: url("../img/mackenzie-logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -542,7 +542,7 @@ main {
     height: 40vh;
   }
   .education div .card-tam {
-    background: url("./img/tamwood-logo.png");
+    background: url("../img/tamwood-logo.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
