@@ -781,6 +781,42 @@ main {
   main section {
     width: 100%;
   }
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 50px;
+  }
+  .about article #container1 {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about article #container {
+    width: 30%;
+  }
   .projects {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -873,7 +909,6 @@ main {
   .education .card-body a {
     padding: 3%;
     background-color: #8c2fee;
-    border: 1px solid #5be6c8;
   }
   .education .card:hover {
     background-color: #5be6c8;
