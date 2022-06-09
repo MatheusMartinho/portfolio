@@ -15,10 +15,12 @@
       .nav-desktop{
         display:none;
       }
+
       .left,.right{
         font-size: 35px;
         padding:4%;
       }
+      
       details {
         position: relative;
         text-align: right;
@@ -47,7 +49,7 @@
     }
     
     .header-img{
-      background-image: url("/img/app-monitoring.webp");
+      background-image: url("./img/app-monitoring.webp");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -70,9 +72,13 @@
       h1,h2{
         padding: 1% 4%;
       }
+      .padding-h2{
+        padding-bottom:5%;
+      }
       .link-header{
         margin-top: 4%;
       }
+      
       a{
         text-decoration:none;
         background-color:$block;
@@ -212,22 +218,22 @@
       }
     }
     .projeto1{
-      @include project-cardImg("/img/projeto1.png");
+      @include project-cardImg("./img/projeto1.png");
     }
     .projeto2{
-      @include project-cardImg("/img/projeto2.png");
+      @include project-cardImg("./img/projeto2.png");
     }
     .projeto3{
-      @include project-cardImg("/img/projeto3.png");
+      @include project-cardImg("./img/projeto3.png");
     }
     .projeto4{
-      @include project-cardImg("/img/projeto4.png");
+      @include project-cardImg("./img/projeto4.png");
     }
     .projeto5{
-      @include project-cardImg("/img/projeto5.png");
+      @include project-cardImg("./img/projeto5.png");
     }
     .projeto6{
-      @include project-cardImg("/img/projeto6.png");
+      @include project-cardImg("./img/projeto6.png");
     }
   }
   
@@ -283,13 +289,13 @@
       }
 
       .card-ser{
-        @include Education-cardImg("/img/logo-colegio-ser-mobile.png");
+        @include Education-cardImg("./img/logo-colegio-ser-mobile.png");
       }
       .card-mack{
-        @include Education-cardImg("/img/mackenzie-logo.png");
+        @include Education-cardImg("./img/mackenzie-logo.png");
       }
       .card-tam{
-        @include Education-cardImg("/img/tamwood-logo.png")
+        @include Education-cardImg("./img/tamwood-logo.png")
       }
 
       a{
