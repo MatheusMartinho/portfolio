@@ -1,0 +1,227 @@
+@media (min-width: 1080px){
+  main{
+    section{
+      width: 100%
+    }
+  }
+  header{
+    width: 100%;
+    height: 100vh;
+    .right{
+      display:none;
+    }
+    .left{
+      display:flex;
+      width: 100%;
+      font-size: 15px;
+      row-gap: 20px;
+      height: 1vh !important;
+      i{
+        cursor: pointer;
+      }
+    }
+    nav{
+      padding-bottom: 2%;
+      min-height: 14.4vh;
+      font-size: 20px;
+      .nav-desktop{
+      display:flex;
+      font-size: 22px;
+      width:100%;
+      column-gap:30px;
+      justify-content: flex-end;
+      list-style-type: none;
+      li{
+        color:$buttons;
+        height: 4vh;
+        padding: 0.5%;
+      }
+      a{
+        text-decoration: none;
+      }
+      li:hover{
+        border: 1px solid red;
+        border-radius: 15px;
+        color:$block;
+        border: 1px solid $buttons;
+        background-color: $buttons;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+        transition: all ease 0.5s;
+      }
+      }
+    }
+    .header-body{
+      width: 100%;
+      height: 100vh;
+      .wrap{
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        a{
+          width: 18% !important;
+        }
+        a:hover{
+          color:$block;
+          border: 1px solid $buttons;
+          background-color: $buttons;
+          box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+          transition: all ease 0.5s;
+        }
+      }
+      .header-img{
+        width: 100vh;
+        height: 90vh;
+      }
+    }
+  }
+  .about{
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    article{
+      display: flex;
+      justify-content:space-evenly;
+      row-gap: 50px;
+      #container1{
+        width: 50%;
+        display:flex;
+        justify-content:center;flex-direction: column;
+        align-items:center;
+      }
+      #container{
+        width: 30%;
+      }
+    }
+  }
+  .projects{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    .container-projects{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      .container{
+        width: 30%;
+      }
+      a{
+        
+        width: 25% !important;
+        padding: 2% !important;
+        margin-bottom: 2%;
+        border-radius: 15px;
+      }
+      a:hover{
+        color:$block;
+        border: 1px solid $buttons;
+        background-color: $buttons;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+        transition: all ease 0.5s;
+      }
+    }
+  }
+  .skills{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65vh;
+    justify-content: space-evenly;
+    align-items: none;
+    .subheader{
+      width: 100%;
+      text-align: top;
+    }
+    article{
+      width:30%;
+    }
+    .progress-bar{
+      width:60%;
+    }
+    .effect:hover{
+        color:$buttons;
+        border: 1px solid $buttons;
+        background-color: $block;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+        transition: all ease 0.5s;
+    }
+    
+  }
+  .education{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+    .card{
+      width: 40vh;
+      height: 60vh;
+    }
+    .card-body a{
+      padding: 3%;
+      background-color: $block;
+    }
+    .card:hover{
+      background-color: $buttons;
+      color:black;
+      a:hover{
+        color:$buttons;
+        background-color: $block;
+        box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+        transition: all ease 0.5s;
+      }
+    }
+  }
+  .contact{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    textarea{
+      outline:none;
+    }
+    input:focus,textarea:focus{
+      border: 2px solid $block;
+      box-shadow: 0 0 10px $block, 0 0 40px $block, 0 0 80px $block;
+      transition: all ease 0.5s; 
+    }
+    article{
+      width: 40%;
+    }
+    [type="submit"]{
+      border: none;
+      cursor: pointer;
+    }
+    [type="submit"]:hover{
+      background-color: $buttons;
+      box-shadow: 0 0 10px $buttons, 0 0 40px $buttons, 0 0 80px $buttons;
+      transition: all ease 0.5s;
+    }
+  }
+  footer{
+    width: 97.89%;
+    min-height: 30vh;
+    [type="submit"]{
+      border:none;
+      cursor: pointer;
+    }
+    [type="submit"]:hover{
+      background-color: $buttons;
+      box-shadow: 0 0 10px $buttons, 0 0 40px $buttons, 0 0 80px $buttons;
+      transition: all ease 0.5s;
+    }
+    [type="email"]{
+      width: 35vh;
+  }
+  a:hover{
+    color: $buttons;
+    transition: all ease 0.5s;
+  }
+  input:focus{
+    border: 2px solid $buttons;
+    box-shadow: 0 0 10px $buttons, 0 0 40px $buttons, 0 0 80px $buttons;
+    transition: all ease 1s; 
+  }
+  }
+}
