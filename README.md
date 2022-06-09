@@ -1,1 +1,1 @@
-Complete website: https://matheusmartinho.github.io/portfolio/#education
+Complete website: https://matheusmartinho.github.io/portfolio/
